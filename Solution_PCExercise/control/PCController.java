@@ -24,7 +24,7 @@ public class PCController
 
     }
     
-    public PC createPCDev2(int serialNO, String processor){
+    public PC createPCDev3(int serialNO, String processor){
         pc = new PC(serialNO, processor);
         pcc.tilfoejPC(pc);
         return pc;
