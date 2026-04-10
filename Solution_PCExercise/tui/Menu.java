@@ -19,7 +19,6 @@ public class Menu
     {
         System.out.println("Singelton Execercise and layer exercise");
         pcCon = new PCController();
-        //ALCL
     }
 
     public void start()
