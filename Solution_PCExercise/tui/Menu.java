@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 
  * @author (Kis Boisen Hansen, Anita Lykke Clemmensen) 
  * @version (2010.04.08, 2013.10.30)
- * Anita
+ * ALCL
  */
 public class Menu
 {
@@ -86,7 +86,19 @@ public class Menu
     
     private void startFindPC()
     {
-        //Finish the find PC       
+        //Finish the find PC  
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter serial number ");
+        int inSerialNo = keyboard.nextInt();
+        
+        PC pc = pcCon.findPC(inSerialNo);
+        if(pc != null){
+            System.out.println("PC with serialnumber " + pc.getSerialNumber() + " is found");
+        }
+        else{
+            System.out.println("No PC found");
+        }
+        pause();
     }
 
     private void writeEnd()

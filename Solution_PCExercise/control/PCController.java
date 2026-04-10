@@ -32,7 +32,7 @@ public class PCController
     }
 
     public PC findPC(int serialNo){
-        return null;
+        return pcc.findPCSerialNo(serialNo);
     }
 
 }

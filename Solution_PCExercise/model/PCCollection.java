@@ -87,6 +87,31 @@ public class PCCollection
         }//end while
         return MyPCCollection.get(index);
     }
+    
+    public PC findPCSerialNo(int serialNo)
+    {
+        PC pcObjekt = null;
+        int index = 0;
+        boolean found = false;
+        while(index < MyPCCollection.size() && !found)
+        {
+            pcObjekt = MyPCCollection.get(index); 
+            if(pcObjekt.getSerialNumber() == serialNo)
+            {
+                found = true;
+            }
+            else{
+                index++;
+            }
+        }//end while
+        if(found){
+            pcObjekt = MyPCCollection.get(index); 
+        }
+        else{
+            pcObjekt = null;
+        }
+        return pcObjekt;
+    }
 
     public ArrayList<PC> findAllLoans()
     {
