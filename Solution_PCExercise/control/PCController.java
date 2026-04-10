@@ -31,7 +31,7 @@ public class PCController
         
     }
 
-    public PC findPC(int serialNo){
+    public PC findPCDev2(int serialNo){
         return pcc.findPCSerialNo(serialNo);
     }
 
