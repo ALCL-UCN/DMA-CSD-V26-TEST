@@ -79,6 +79,8 @@ public class Menu
         //here you need to read more and
         //call the rigth methods
         PC pc = pcCon.createPC(inSerialNo, inProcessor);
+        System.out.println("PC with serialnumber " + pc.getSerialNumber() + " is created");
+        pause();
     }
     
     private void startFindPC()
