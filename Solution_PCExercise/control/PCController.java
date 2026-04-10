@@ -24,14 +24,14 @@ public class PCController
 
     }
     
-    public PC createPCDev1(int serialNO, String processor){
+    public PC createPC(int serialNO, String processor){
         pc = new PC(serialNO, processor);
         pcc.tilfoejPC(pc);
         return pc;
         
     }
 
-    public PC findPCDev2(int serialNo){
+    public PC findPC(int serialNo){
         return pcc.findPCSerialNo(serialNo);
     }
 
