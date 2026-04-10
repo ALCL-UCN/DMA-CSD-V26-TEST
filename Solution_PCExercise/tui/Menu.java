@@ -9,6 +9,7 @@ import java.util.Scanner;
  * 
  * @author (Kis Boisen Hansen, Anita Lykke Clemmensen) 
  * @version (2010.04.08, 2013.10.30)
+ * ALCL
  */
 public class Menu
 {
@@ -18,6 +19,7 @@ public class Menu
     {
         System.out.println("Singelton Execercise and layer exercise");
         pcCon = new PCController();
+        //ALCL
     }
 
     public void start()
